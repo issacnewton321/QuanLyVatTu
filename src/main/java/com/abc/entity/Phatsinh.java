@@ -8,13 +8,15 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 @Entity
 public class Phatsinh {
 	@Id
 	String phieu;
 	Date ngay;
 	String loai,hotenkh,manv;
-	
+	@JsonManagedReference
 	@OneToMany(fetch = FetchType.LAZY,mappedBy = "phatsinh",cascade = CascadeType.ALL)
 	List<CT_Phatsinh> listCTPS;
 

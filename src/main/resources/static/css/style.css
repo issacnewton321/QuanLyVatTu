@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing:border-box;
+}
+.header{
+    color: white;
+    background-color: #2b5475;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    height: 10vh;
+}
+.logout{
+    text-decoration: none;
+    color: white;
+}
+.logout:hover{
+    text-decoration: none;
+    color: white;
+}
+.slide-button{
+    margin-right: 20px;
+    transition: 0.3s all;
+}
+.slide-button:hover{
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+.slide-bar{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 90vh;
+    background-color: #1e5986;
+    color: white;
+    transition: 0.4s all;
+}
+.slide-bar_list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.slide-bar_list a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+.slide-bar_list a:hover{
+    color: white;
+    background-color: #4077a5;
+    text-decoration: none;
+}
+.employee{
+    text-align: center;
+}
+.employee-image{
+    font-size: 150px;
+    text-align: center;
+}
+.on-off{
+    margin-left:-180px;
+}
+.workplace{
+    color: black;
+    margin-left: 50px;
+    width: 80%;
+    transition: 0.4s all;
+}
+.body{
+    display: flex;
+}
+.form-head{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.form-link{
+    color: teal;
+    transition: all 0.5s;
+}
+.form-link:hover{
+    color: violet;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.form-func{
+    font-size: 18px;
+    background-color: wheat;
+    margin-bottom: 20px;
+}
+.form-func li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 8px;
+    border-right: 1px solid white;
+    transition: all 0.3s;
+}
+.form-func li:hover{
+    background-color: #8caad6;
+}
+.find_form{
+    border: none;
+    margin-left: 5px;
+    width: 500px;
+    font-size: 14px;
+    padding: 5px;
+    outline: none;
+}
+.workplace_display{
+    height: 70vh;
+    overflow: scroll;
+}
+.table{
+    font-size: 14px;
+}
+.logo-name{
+    color: #66beb1;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.noStyleHref{
+	text-decoration: none;
+	color:black;
+}
+.noStyleHref:hover{
+	text-decoration: none;
+	color:black;
+}
+.rowVT:hover{
+	cursor: pointer !important;
+}

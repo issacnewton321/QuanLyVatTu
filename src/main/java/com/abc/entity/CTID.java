@@ -3,6 +3,7 @@ package com.abc.entity;
 import java.io.Serializable;
 
 import javax.persistence.Embeddable;
+import javax.persistence.Id;
 
 @Embeddable
 public class CTID implements Serializable {

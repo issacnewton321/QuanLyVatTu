@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.abc.Controller"})
+@ComponentScan({"com.abc.controller"})
 @EntityScan("com.abc.entity")
 @EnableJpaRepositories("com.abc.repository")
 public class QuanLyVatTuApplication {

@@ -8,6 +8,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.MapsId;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name ="CT_PHATSINH")
 public class CT_Phatsinh {
@@ -15,10 +18,12 @@ public class CT_Phatsinh {
 	CTID id;
 	int soluong;
 	float dongia;
+	@JsonBackReference
 	@ManyToOne
 	@MapsId("phieu")
 	@JoinColumn(name ="phieu")
 	Phatsinh phatsinh;
+	@JsonBackReference
 	@ManyToOne
 	@MapsId("mavt")
 	@JoinColumn(name ="mavt")

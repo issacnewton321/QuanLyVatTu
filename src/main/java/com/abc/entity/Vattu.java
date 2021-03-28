@@ -10,12 +10,16 @@ import javax.persistence.OneToMany;
 
 import org.hibernate.annotations.Check;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class Vattu {
 	@Id
 	String mavt;
-	String tenvt,donvitinh;
+	String tenvt;
+	String dvt;
 	int soluongton;
+	@JsonManagedReference
 	@OneToMany(mappedBy = "vattu",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	List<CT_Phatsinh> listCTPS;
 	public Vattu() {
@@ -34,11 +38,11 @@ public class Vattu {
 	public void setTenvt(String tenvt) {
 		this.tenvt = tenvt;
 	}
-	public String getDonvitinh() {
-		return donvitinh;
+	public String getDvt() {
+		return dvt;
 	}
-	public void setDonvitinh(String donvitinh) {
-		this.donvitinh = donvitinh;
+	public void setDvt(String dvt) {
+		this.dvt = dvt;
 	}
 	public int getSoluongton() {
 		return soluongton;
